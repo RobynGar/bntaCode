@@ -12,16 +12,24 @@ public class exercise4 {
      public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
          System.out.println("Enter a number");
+        int number = scanner.nextInt();
+         System.out.println(prime(number));
 
      }
      public static boolean prime(int number){
          if (number <=1){
+             System.out.println(number + " is not a prime number");
              return false;
+
          }
          for (int i = 2; i < number; i++){
-             if (number % 1 ==0){
-                 return true;
+             if (number % i ==0){
+                 System.out.println(number + "is not a prime number");
+                 return false;
+
              }
          }
+         System.out.println( number + " is a prime number");
+         return true;
      }
 }
