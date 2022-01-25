@@ -10,7 +10,15 @@ public class exercise3 {
       pass program arguments
     */
    public static void main(String[] args) {
-     int numbers= 4;
+    int i= 4;
+       if (i % 2 == 0) {
+           // in the number you i
+           System.out.println("even");
+       } else {
+           System.out.println("odd");
+       }
+
+    /* int numbers= 5;
        switch (numbers){
            case 1:
            case 3:
@@ -38,6 +46,9 @@ public class exercise3 {
                break;
            default:
                System.out.println("number not included");
-       }
+       }*/
    }
+    public static void oddOrEven(int input){
+        System.out.println(input % 2 == 0 ? "Even" : "Odd");
+    }
 }
