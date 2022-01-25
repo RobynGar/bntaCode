@@ -12,6 +12,7 @@ public class exercise2 {
 
         input = input.replace('b', 'B');
         input = input.replace('n', 'N');
+        input = input.substring(0,6)+" "+ input.substring(6,13);
 
            System.out.println(input);
 
