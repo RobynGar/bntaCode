@@ -54,9 +54,11 @@ public class exercise5 {
 
         //random num generator
         Random randNum = new Random();
+        int i = randNum.nextInt(randomJokesArray.length);
         //generator.generateRandomNumber(upperbound) => gives a number between 0 and upperbound-1 e.g. the number in this array is 5 but the last index position is 4, so length-1.
-        int index = randNum.nextInt(randomJokesArray.length); //for the .nextInt you do not need to specify length-1 as it knows so just put length
-        System.out.println(randomJokesArray[index]);
+
+        //for the .nextInt you do not need to specify length-1 as it knows so just put length
+        System.out.println(randomJokesArray[i]);
 
     }
 }
