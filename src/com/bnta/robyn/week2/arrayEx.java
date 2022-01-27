@@ -28,7 +28,7 @@ public class arrayEx {
         empty[1]=17;
         System.out.println(Arrays.toString(empty));
 
-        // declare and initialise a String array which
+        // Q5 declare and initialise a String array which
         // holds the values "a", "b", "c" and "d"
         // print the array to the console
         String[] stringArray = {"a", "b", "c", "d"};
@@ -76,8 +76,8 @@ public class arrayEx {
         // each value in the array to be double the initial
         // value again print the array
 
-        for (int i =0; i < numArray.length; i++){
-            numArray[i]= numArray[i]*2;
+        for (int i : numArray){
+            numArray[i-1]= numArray[i-1]*2;
             System.out.println(Arrays.toString(numArray));
         }
         // above prints out correctly by the end but instead
@@ -91,5 +91,20 @@ public class arrayEx {
         // if the two are equal, change the `hasC` value to `true`
         // once the `for` loop concludes, print out a message which tells you if `hasC` is `true` or `false`
 
+        String condition = "c";
+        boolean hasC = false;
+        for (String item : stringArray){
+            // compare condition to string Array variable
+           if(item == condition){
+               hasC = true;
+               break;
+           }
+        }
+        System.out.println(hasC);
+        //hasC variable at the beginning is set to false as true is only returned
+        // if c in the condition string then assign a
+        // new value to the boolean. Compare each
+        // element of the stringArray to C in condition string
+        // and return true if they match
     }
 }
