@@ -75,6 +75,21 @@ public class arrayEx {
         // now create a second `for` loop which reassigns
         // each value in the array to be double the initial
         // value again print the array
-        for ()
+
+        for (int i =0; i < numArray.length; i++){
+            numArray[i]= numArray[i]*2;
+            System.out.println(Arrays.toString(numArray));
+        }
+        // above prints out correctly by the end but instead
+        // of one line it *2 each index individually and then
+        // prints it and loops again moving on to next index point to double then loops again...
+
+        // start from your solution to Q5
+        // create a String variable called `condition` which has the value "c"
+        // create a Boolean variable called `hasC` which has the value `false`
+        // create a `for` loop which goes through each item in our array, comparing it against our `condition` variable
+        // if the two are equal, change the `hasC` value to `true`
+        // once the `for` loop concludes, print out a message which tells you if `hasC` is `true` or `false`
+
     }
 }
