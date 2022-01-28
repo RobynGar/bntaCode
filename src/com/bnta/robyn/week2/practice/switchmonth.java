@@ -1,4 +1,4 @@
-package com.bnta.robyn.week2;
+package com.bnta.robyn.week2.practice;
 
 import java.util.Scanner;
 
