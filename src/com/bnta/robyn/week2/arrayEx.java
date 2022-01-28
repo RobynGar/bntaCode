@@ -45,7 +45,11 @@ public class arrayEx {
         stringArray[0]= "z";
         System.out.println(Arrays.toString(stringArray2));
         System.out.println(Arrays.toString(stringArray));
-        // as we have made the arrays = to each other it is refering to the same position in the memory like using the same shopping basket if someone adds something to the shopping basket the other person also now has in (memory location is basket)
+        // as we have made the arrays = to each other it is
+        // refering to the same position in the memory like
+        // using the same shopping basket if someone adds
+        // something to the shopping basket the other person
+        // also now has in (memory location is basket)
 
         // using your answer to Q5, create another array which is A COPY off of your original array (using the `Arrays.copyOf()` method)
         // NOTE that the `.copyOf()` method accepts two arguments, first being the array that's being copied and second being the length of the new array
@@ -67,9 +71,9 @@ public class arrayEx {
         // create a `for` loop which initialises this
         // array with the numbers 1-10
         // print the array to the console
-        int[] numArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+       int[] numArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         for (int i = 0; i < 10; i++) {
-            System.out.println(numArray[i]);
+           System.out.println(numArray[i]);
         }
         // Q9 - adding onto your example from Q8,
         // now create a second `for` loop which reassigns
@@ -77,12 +81,26 @@ public class arrayEx {
         // value again print the array
 
         for (int i : numArray){
-            numArray[i-1]= numArray[i-1]*2;
-            System.out.println(Arrays.toString(numArray));
+            numArray[i-1]= numArray[i-1] * 2;
         }
-        // above prints out correctly by the end but instead
-        // of one line it *2 each index individually and then
-        // prints it and loops again moving on to next index point to double then loops again...
+        System.out.println(Arrays.toString(numArray));
+        //or can do it below way. Above do not need to add 1
+        // as i say index position is 1 in the numArray whereas
+        // below the loop sets index position 0 to 0 and so
+        // all index position have to have a 1 added on them
+        // to be an array between 1-10
+       /* int[] num = new int[10];
+        for (int i = 0; i < 10; i++) {
+            num[i]= i + 1;
+        }
+        for (int i = 0; i < 10; i++) {
+            num[i]= num[i] * 2;
+        }
+        System.out.println(Arrays.toString(num));
+
+        */
+        //the issue before of why it was printing 10 times
+        // is because sout was in the for loop{}
 
         // start from your solution to Q5
         // create a String variable called `condition` which has the value "c"
