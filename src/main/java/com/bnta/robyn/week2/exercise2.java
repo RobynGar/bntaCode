@@ -8,16 +8,18 @@ public class exercise2 {
         */
        public static void main(String[] args) {
         String input = "   b ri   ght net   work  ";
-        input = input.trim().replaceAll("\\s+", "");
+           System.out.println(transformSentence(input));
 
-        input = input.replace('b', 'B');
-        input = input.replace('n', 'N');
-        input = input.substring(0,6)+" "+ input.substring(6,13);
-
-           System.out.println(input);
 
             }
+            public static String transformSentence(String input) {
+                input = input.trim().replaceAll("\\s+", "");
 
+                input = input.replace('b', 'B');
+                input = input.replace('n', 'N');
+                input = input.substring(0, 6) + " " + input.substring(6, 13);
+                return input;
+            }
         }
 
 
