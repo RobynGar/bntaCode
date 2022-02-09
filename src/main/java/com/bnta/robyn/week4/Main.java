@@ -7,5 +7,9 @@ public class Main {
         Exercise1 exercise1 = new Exercise1();
 
         System.out.println(exercise1.check(exercise1.input));
+
+
+
+
     }
 }
