@@ -8,7 +8,8 @@ public class Main {
 
         System.out.println(exercise1.check(exercise1.input));
 
-
+        Exercise2 exercise2 = new Exercise2();
+        System.out.println(exercise2.mode(exercise2.input));
 
 
     }

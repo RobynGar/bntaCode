@@ -12,7 +12,7 @@ public class Exercise2 {
     //Write unit tests for your method
 
 
-    String input = "1, 1, 1, 1, 3, 4, 5, 6, 7, 7, 7, 8, 8";
+    String input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
 
 
     public List<String> mode(String input) {
@@ -53,15 +53,20 @@ public class Exercise2 {
         // loop though the map entries (key and value pair). map we called mostCommon. e is the element / entry we are looping through
         for (Map.Entry<String, Integer> e : mostCommon.entrySet()) {
             // if index (value) in map is >= int max then max will = this value
-            if (e.getValue() >= max) {
+            if (e.getValue() > max) {
                 // the int value of the entry is greater than 0 so make that the new max
                 max = e.getValue();
-                // list name, add the corresponding key of the map entry to the list
+                //if value of e is greater than max, empty list to get rid of values that have a lower occurrence
+                values.clear();
+                // values = list name, add the corresponding key of the map entry to the list
+                values.add(e.getKey());
+            } else if (e.getValue() == max){
                 values.add(e.getKey());
             }
         }
 
         return values;
+        // return the list we called values were the mode/ modes are stored
 
     }
 }
